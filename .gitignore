@@ -1,4 +1,3 @@
-
 /node_modules
 /.pnp
 .pnp.js
@@ -14,7 +13,6 @@
 .env.test.local
 .env.production.local
 .env.*
-env
 
 npm-debug.log*
 yarn-debug.log*
