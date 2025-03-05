@@ -1,0 +1,146 @@
+/* src/components/NoteDisplay/NoteDisplay.css */
+.note-display-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(16, 8, 4, 0.08);
+    padding: 1.5rem;
+  }
+  
+  .note-display-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .note-display-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cta-800);
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .word-count {
+    font-size: 0.8rem;
+    color: var(--cta-600);
+    background-color: var(--cta-50);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+  }
+  
+  .note-display {
+    flex: 1;
+    min-height: 350px;
+    padding: 1.2rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    background-color: #fafafa;
+    overflow: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .note-content {
+    line-height: 1.7;
+    color: var(--cta-800);
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+  }
+  
+  /* Heading styling */
+  .note-content h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--cta-700);
+  }
+  
+  /* Make sure terms are bold and properly styled */
+  .note-content strong {
+    font-weight: 600;
+    color: var(--cta-700);
+  }
+  
+  .note-content em {
+    font-style: italic;
+    color: var(--cta-600);
+  }
+  
+  /* Styling for bullet points */
+  .note-content {
+    padding-left: 0;
+  }
+  
+  /* Add a small space between bullet/hyphen items */
+  .note-content > div {
+    margin-bottom: 0.5rem;
+  }
+  
+  .empty-notes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--cta-300);
+    font-style: italic;
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 0.8rem;
+  }
+  
+  .copy-button {
+    padding: 0.8rem 1.2rem;
+    background-color: var(--primary-button);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 140px;
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .copy-button:hover:not(:disabled) {
+    background-color: var(--primary-button-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(176, 87, 48, 0.25);
+  }
+  
+  .copy-button:disabled {
+    background-color: var(--cta-200);
+    cursor: not-allowed;
+  }
+  
+  .download-button {
+    padding: 0.8rem 1.2rem;
+    background-color: white;
+    color: var(--cta-700);
+    border: 1px solid var(--cta-100);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .download-button:hover:not(:disabled) {
+    background-color: var(--cta-50);
+    border-color: var(--cta-200);
+  }
+  
+  .download-button:disabled {
+    color: var(--cta-100);
+    border-color: #eaeaea;
+    cursor: not-allowed;
+  }

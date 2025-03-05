@@ -1,0 +1,111 @@
+/* src/components/TextInput/TextInput.css */
+.text-input-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(16, 8, 4, 0.08);
+    padding: 1.5rem;
+  }
+  
+  .text-input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .text-input-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cta-800);
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .word-count {
+    font-size: 0.8rem;
+    color: var(--cta-600);
+    background-color: var(--cta-50);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+  }
+  
+  .text-input {
+    flex: 1;
+    min-height: 350px;
+    padding: 1rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: none;
+    margin-bottom: 1.5rem;
+    background-color: #fafafa;
+  }
+  
+  .text-input:focus {
+    outline: none;
+    border-color: var(--cta-400);
+    box-shadow: 0 0 0 2px rgba(205, 111, 71, 0.15);
+  }
+  
+  .text-input:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 0.8rem;
+  }
+  
+  .generate-button {
+    padding: 0.8rem 1.2rem;
+    background-color: var(--primary-button);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .generate-button:hover:not(:disabled) {
+    background-color: var(--primary-button-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(176, 87, 48, 0.25);
+  }
+  
+  .generate-button:disabled {
+    background-color: var(--cta-200);
+    cursor: not-allowed;
+  }
+  
+  .clear-button {
+    padding: 0.8rem 1.2rem;
+    background-color: white;
+    color: var(--cta-700);
+    border: 1px solid var(--cta-100);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .clear-button:hover:not(:disabled) {
+    background-color: var(--cta-50);
+    border-color: var(--cta-200);
+  }
+  
+  .clear-button:disabled {
+    color: var(--cta-100);
+    border-color: #eaeaea;
+    cursor: not-allowed;
+  }

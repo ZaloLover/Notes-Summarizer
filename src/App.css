@@ -1,0 +1,90 @@
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+body {
+  font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--body-bg);
+  color: #333;
+  line-height: 1.6;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2.5rem 2rem 2rem; /* Increased top padding to create more space between header and content */
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.text-processor {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem; /* Added more space at the top of the processor area */
+}
+
+@media (min-width: 768px) {
+  .text-processor {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.output-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(176, 87, 48, 0.1); /* Using cta-500 with transparency */
+  color: var(--cta-700);
+  border-radius: 8px;
+  border-left: 4px solid var(--cta-600);
+  font-size: 0.9rem;
+}
+
+.settings-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.settings-icon-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--cta-600);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(96, 47, 26, 0.3);
+  transition: all 0.2s ease;
+}
+
+.settings-icon-button:hover {
+  background-color: var(--cta-500);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(96, 47, 26, 0.4);
+}
+
+.settings-icon {
+  width: 24px;
+  height: 24px;
+}

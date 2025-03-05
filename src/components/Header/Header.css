@@ -1,0 +1,40 @@
+/* src/components/Header/Header.css */
+.header-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.8rem 0 1.5rem;
+    user-select: none; /* Prevents text selection */
+  }
+  
+  .header-pill {
+    background-color: var(--cta-500);
+    color: white;
+    padding: 1.2rem 3.5rem;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(176, 87, 48, 0.25);
+    max-width: 400px; /* Increased from 320px to make it wider */
+    width: 85%; /* Makes it responsive */
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    pointer-events: none; /* Additional protection against selection */
+  }
+  
+  .app-subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-top: 0.3rem;
+    letter-spacing: 0.3px;
+    font-family: 'Söhne', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    pointer-events: none; /* Additional protection against selection */
+  }
